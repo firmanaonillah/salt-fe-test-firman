@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,208 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.blue-front {
+  position: absolute;
+  bottom: 0;
+  background-color: #4097DB;
+  clip-path: polygon(0 25%, 100% 91%, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+}
+
+.blue-back {
+  position: absolute;
+  bottom: 0;
+  background-color: #53A7E9;
+  clip-path: polygon(0 90%, 100% 54%, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 250px;
+}
+
+#hero {
+  background-image: url("/public/img/hero-image.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  /* background-size: cover; */
+  background-position-x: center;
+  position: relative;
+}
+
+#hero-content {
+  background-color: #4097DB;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#hero-content h1 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+#hero-content p {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: white;
+
+}
+
+#second-section h1 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #029FE4;
+}
+
+#second-section h3 {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+#second-section p {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #777777;
+}
+
+#third-section {
+  background-color: #F8F8F8;
+}
+
+#third-section h1 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #029FE4;
+}
+
+#third-section p {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #777777;
+}
+
+ul.dash {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+ul.dash > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul {
+  font-family: Rubik;
+font-size: 24px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+ul div {
+  font-family: Rubik;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#fourth-section {
+  background-color: #509FDD;
+  padding: 30px;
+}
+
+#fourth-section h1 {
+  font-family: Rubik;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #029FE4;
+}
+
+#fifth-section {
+  background-image: url("/public/img/BG.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 250px;
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+}
+
+.address {
+  font-family: Rubik;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+
+.link-list {
+  display: flex;
+  color: #FFFFFF;
+  font-family: Rubik;
+font-size: 16px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.link-list li {
+  margin-left: 6px;
+  margin-right: 6px;
 }
